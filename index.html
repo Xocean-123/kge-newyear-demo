@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>新年第一首歌 · 双视角交互原型</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="demo">
+    <header class="desktop-header">
+      <div class="brandline"><span class="k-logo">K<span>♪</span></span><span>全民 K 歌 <b>×</b> 2027 元旦</span><span class="prototype-tag">INTERACTIVE DEMO</span></div>
+      <div class="heading-row"><div><p class="eyebrow">A SONG, JUST FOR YOU</p><h1>把新年，唱给你<span>。</span></h1><p class="intro">一份歌声礼物，两个视角，一次双向的心意。</p></div><div class="header-note"><span class="live-dot"></span> 双端状态实时联动<br><small>录音、AI、付款和红包为模拟体验</small></div></div>
+    </header>
+    <section class="toolbar" aria-label="原型演示控制">
+      <div class="control-set"><span class="control-label">送礼渠道</span><div class="segments" id="channel-controls"><button data-channel="app" aria-pressed="true">全民 K 歌内</button><button data-channel="wechat" aria-pressed="false">微信</button><button data-channel="qq" aria-pressed="false">QQ</button></div></div>
+      <div class="control-set"><span class="control-label">体验视角</span><div class="segments" id="view-controls"><button data-view="both" aria-pressed="true">双屏联动</button><button data-view="A" aria-pressed="false">A 用户</button><button data-view="B" aria-pressed="false">B 用户</button></div></div>
+      <button id="restart" class="reset-button">重新体验 ↻</button>
+    </section>
+    <section id="stage" class="stage" data-view="both" aria-label="A、B 用户虚拟手机">
+      <article id="device-A" class="device-column" aria-label="A 用户手机">
+        <div class="persona"><span class="persona-avatar avatar-a">A</span><div><strong>林屿 <span>A 用户</span></strong><p id="step-A">准备一份新年心意</p></div><span class="persona-label">送礼视角</span></div>
+        <div class="phone"><div class="phone-status"><b>9:41</b><span class="island"></span><span class="signal">▂▄▆ <b>5G</b> ▰</span></div><div id="screen-A" class="phone-content" data-owner="A"></div><div class="home-indicator"></div></div>
+      </article>
+      <div class="connection" aria-hidden="true"><span>♪</span><i></i><b>心意<br>传递中</b><i></i><span>♡</span></div>
+      <article id="device-B" class="device-column" aria-label="B 用户手机">
+        <div class="persona"><span class="persona-avatar avatar-b">B</span><div><strong>小满 <span>B 用户</span></strong><p id="step-B">等待一份特别的祝福</p></div><span class="persona-label">收礼视角</span></div>
+        <div class="phone"><div class="phone-status"><b>9:41</b><span class="island"></span><span class="signal">▂▄▆ <b>5G</b> ▰</span></div><div id="screen-B" class="phone-content" data-owner="B"></div><div class="home-indicator"></div></div>
+      </article>
+    </section>
+    <div class="demo-footer"><span>建议顺序：A 制作并送出 → B 拆封听歌 → B 回复或回赠</span><span>示意价格 · 不会真实录音、生成歌曲或扣款</span></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

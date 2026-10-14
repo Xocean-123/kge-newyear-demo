@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="灰色猫咪头像插画">
+  <defs>
+    <radialGradient id="bg"><stop stop-color="#e4d8c8"/><stop offset="1" stop-color="#b7a99c"/></radialGradient>
+    <radialGradient id="fur"><stop stop-color="#d4ccbd"/><stop offset="1" stop-color="#918d85"/></radialGradient>
+    <radialGradient id="eye"><stop stop-color="#eca451"/><stop offset=".72" stop-color="#ba7133"/><stop offset="1" stop-color="#534a3d"/></radialGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#bg)"/>
+  <path d="M43 104 55 24 111 64 145 64 201 24 213 104" fill="#85847f" stroke="#73736f" stroke-width="5"/>
+  <path d="M63 77 66 45 98 70M193 77 190 45 158 70" fill="#c7a7a6"/>
+  <ellipse cx="128" cy="139" rx="108" ry="102" fill="url(#fur)"/>
+  <path d="M42 125q33-31 76-21M214 125q-33-31-76-21" fill="none" stroke="#77766f" stroke-width="8" opacity=".5"/>
+  <ellipse cx="79" cy="136" rx="32" ry="38" fill="#f1e9d8"/>
+  <ellipse cx="177" cy="136" rx="32" ry="38" fill="#f1e9d8"/>
+  <ellipse cx="79" cy="138" rx="24" ry="29" fill="url(#eye)"/>
+  <ellipse cx="177" cy="138" rx="24" ry="29" fill="url(#eye)"/>
+  <ellipse cx="80" cy="139" rx="6" ry="22" fill="#262822"/>
+  <ellipse cx="176" cy="139" rx="6" ry="22" fill="#262822"/>
+  <circle cx="70" cy="125" r="6" fill="#fff" opacity=".8"/>
+  <circle cx="166" cy="125" r="6" fill="#fff" opacity=".8"/>
+  <path d="M97 180q31-18 62 0l-31 23z" fill="#e8dfd4"/>
+  <path d="m115 182 13 10 13-10z" fill="#745b58"/>
+  <path d="M128 191v12m0 0q-10 11-23 4m23-4q10 11 23 4" fill="none" stroke="#6b5654" stroke-width="3" stroke-linecap="round"/>
+  <path d="M92 192 30 184m64 17-68 5m138-14 62-8m-64 17 68 5" stroke="#696761" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+</svg>
